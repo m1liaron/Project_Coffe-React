@@ -1,0 +1,10 @@
+
+.container_textContent{
+    margin-left: 385px;
+    margin-right: 385px;
+}
+main{
+    background-image: url('../../resources/images/Main bg.jpg');
+    height: 700px;
+    background-size: cover;
+}
