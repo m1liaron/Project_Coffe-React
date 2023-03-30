@@ -1,21 +1,24 @@
 .nav-links{
-    width: 355px;
     display: flex;
     justify-content: space-around;
     align-items:center;
    list-style: none;
+   gap: 30px;
   }
   .container_navigator{
     display: flex;
     color: white;
     text-decoration: none;
     margin-left: 149px;
-    margin-right: 936px;
   }
 .item{
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 17px;
     color: white;
+}
+.main-house{
+  display: flex;
+  align-items:center;
 }

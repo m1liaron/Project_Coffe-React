@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Nav from './Components/Nav/Nav';
+// import Nav from './Components/Nav/Nav';
 import Home from './Pages/Coffee-House/Home';
 import About from './Pages/For-your-pleasure/For-your-pleasure';
 import OurCoffee from './Pages/Our-coffee/Coffee';
@@ -10,6 +10,7 @@ function App() {
   return (
     <Router>
     <div className="App">
+      {/* <Nav /> */}
       <Routes>
       <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
