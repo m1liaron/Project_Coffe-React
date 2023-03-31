@@ -16,7 +16,7 @@ import './Home.css';
 function Home() {
   return (
 
-    <div>   
+    <>   
         <main>
             <Nav />
             <div className="container">
@@ -71,7 +71,7 @@ function Home() {
           </div>
         </div>
             <Footer/>
-    </div>
+    </>
   );
 }
 
