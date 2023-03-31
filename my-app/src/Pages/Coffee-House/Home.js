@@ -1,14 +1,19 @@
 import React from 'react';
-import './Home.css';
-
 import { Link } from 'react-router-dom';
 
-import Nav from '../../Components/Nav/Nav';
 import HeaderCoffeeBeans from '../../resources/images/Coffee-beans-main.svg';
 import AboutCoffeeBens from '../../resources/images/coffee-beans-about.svg';
 
+import Nav from '../../Components/Nav/Nav';
+// import { Nav, CardList} from '../../Components';
+
+
+import {data} from "../../resources/data";
+import  CardList  from "../../Components/CardList/CardList";
+import Footer from '../../Components/Footer/Fotter';
+
+import './Home.css';
 function Home() {
-  // <img src={AboutCoffeeBens} alt="" />
   return (
 
     <div>   
@@ -31,10 +36,13 @@ function Home() {
         </main>
         <div className="about">
           <div className="container-about">
-            <div className="container-title-about">
+            <div className="row">
+
               <h1 className="title-about">About us</h1>
-              <img src={AboutCoffeeBens} alt="" />
-            </div>
+              <div className="img_coffee">
+                <img src={AboutCoffeeBens} alt="" />
+              </div>
+
               <div className="container-content-about">
                   <p className='description-about'>
                   Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.
@@ -42,7 +50,8 @@ function Home() {
                   so questions. As greatly removed calling pleased improve an. Last ask him cold feel
                   met spot shy want. Children me laughing we prospect answered followed. At it went
                   is song that held help face.
-
+                  </p>
+                  <p className='description-about'>
                   Now residence dashwoods she excellent you. Shade being under his bed her, Much
                   read on as draw. Blessing for ignorant exercise any yourself unpacked. Pleasant
                   horrible but confined day end marriage. Eagerness furniture set preserved far
@@ -50,11 +59,18 @@ function Home() {
                   repair day ladies now.
                   </p>
               </div>
+            </div>
           </div>
         </div>
         <div className="recomended">
+          <div className="container-recomended">
+            <h2 className='title-recomended'>Our best</h2>
+              <div className="container-card-recomended">
+                  <CardList data={data} /> 
+              </div>
+          </div>
         </div>
-        <div className="footer"></div>
+            <Footer/>
     </div>
   );
 }

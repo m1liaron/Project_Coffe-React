@@ -1,0 +1,32 @@
+.footer {
+    .nav-links-footer{
+        list-style: none;
+        .main-house-footer{
+            display: flex;
+            justify-content: center;
+            justify-content: center;
+            align-items:center;
+            gap: 40px;
+            .logo_container{
+                display: flex;
+                justify-content: center;
+                align-items:center;
+            }
+            .item{
+                color:black;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .footer {
+        .navbar {
+            display: none;
+        }
+
+        .image-coffee {
+            margin-top: 35px;
+        }
+    }
+}

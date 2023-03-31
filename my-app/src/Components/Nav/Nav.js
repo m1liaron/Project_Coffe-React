@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import BeansHeader from '../../resources/images/coffee-beans-header.svg'
 
+
 function Nav(){
     return (
         <nav className='container_navigator'>

@@ -10,13 +10,13 @@
     color: white;
     text-decoration: none;
     margin-left: 149px;
+    margin-bottom: 111px;
   }
 .item{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 17px;
-    color: white;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: #FFFFFF;  
 }
 .main-house{
   display: flex;

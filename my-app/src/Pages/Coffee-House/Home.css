@@ -29,6 +29,7 @@ main{
     color: #FFFFFF;
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
 }
 .img_coffee{
     margin: 0 auto 35px;
@@ -68,7 +69,7 @@ main{
     font-size: 14px;
     line-height: 20px;
 
-    color: #FFFFFF;
+    color: #000000;
     border:1px solid #ffff;
     cursor: pointer;
     background-color: white;
@@ -76,35 +77,61 @@ main{
 
 
 .about{
-    background:#ffff;
+    padding: 89px 0;
 }
 .container-about{
-    margin-left: 425px;
-    margin-right: 425px;
+    margin-left: 420px;
+    margin-right: 420px;
+}
+.row{
     align-items:center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.container-title-about{
+    margin-bottom: 45px;
 }
 .title-about{
-    font-family: 'Merienda';
-    font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 35px;
 
     color: #000000;
-    justify-content: center;
-    margin: 0 auto;
     align-items:center;
+    justify-content: center;
+   margin-left: 250px;
+   margin-right: 250px;
+}
+.container-content-about{
+    margin-left: 100px;
+    margin-right: 100px;
 }
 .description-about{
-    font-family: 'Merienda';
-    font-style: normal;
+    max-width: 589px;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     text-align: center;
 
     color: #000000;
+    margin-bottom: 20px;
+
 }
 
 
 
+.recomended{
+    background-image:url('../../resources/images/Recomended bg.jpg');
+}
+.title-recomended{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+
+    color: #000000;
+}
+.container-card-recomended{
+    padding: 80px 0 110px;
+}
