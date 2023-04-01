@@ -8,7 +8,7 @@ import AboutCoffeeBens from '../../resources/images/coffee-beans-about.svg';
 import ImgWoman from '../../resources/Our-Coffee-img/WomanWithCupOfCoffee.png';
 
 import  CardList  from "../../Components/CardList/CardList";
-import {data} from "../../resources/data/dataFilter";
+import { data } from "../../resources/data/dataFilter";
 import Footer from '../../Components/Footer/Fotter';
 
 function Coffee() {
@@ -58,7 +58,7 @@ function Coffee() {
               <h1 className='filter-title'>Or filter</h1>
                     <button className='btn-filter'>Brazil</button>
                     <button className='btn-filter'>Kenya</button>
-                    <button className='btn-filter'>Kenya</button>
+                    <button className='btn-filter'>Kolumbia</button>
             </div>
           </div>
           <div className="list-cards">

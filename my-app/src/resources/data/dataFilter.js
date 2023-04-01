@@ -26,31 +26,31 @@ export const data = [
         country: 'Kenya',
         price: '6.99',
         recommended: true
-    }
-    ,    
+    },
     {
         id: 3,
-        src: AROMISTICO_Coffee,
-        name: 'AROMISTICO Coffee 1 kg',
+        src: Solimo_Coffee_Beans,
+        name: 'Solimo Coffee Beans 2 kg',
         country: 'Brazil',
-        price: '8.99',
-        recommended: false
+        price: '10.73',
+        recommended: true
     },
     {
         id: 4,
-        src: AROMISTICO_Coffee,
-        name: 'AROMISTICO Coffee 1 kg',
-        country: 'Kenya',
-        price: '10.32',
-        recommended: false
+        src: Presto_Coffee_Beans,
+        name: 'Presto Coffee Beans 1 kg',
+        country: 'Columbia',
+        price: '15.99',
+        recommended: true
     },
     {
         id: 5,
         src: AROMISTICO_Coffee,
         name: 'AROMISTICO Coffee 1 kg',
-        country: 'Columbia',
-        price: '5.99',
-        recommended: false
+        country: 'Kenya',
+        price: '6.99',
+        recommended: true
     }
+    
 ];
 

@@ -27,30 +27,5 @@ export const data = [
         price: '6.99',
         recommended: true
     }
-    // ,    
-    // {
-    //     id: 3,
-    //     src: '/public/img/products/71qBQnpQFYL.png',
-    //     name: 'AROMISTICO Coffee 1 kg',
-    //     country: 'Brazil',
-    //     price: '8.99',
-    //     recommended: false
-    // },
-    // {
-    //     id: 4,
-    //     src: '/public/img/products/71qBQnpQFYL.png',
-    //     name: 'AROMISTICO Coffee 1 kg',
-    //     country: 'Kenya',
-    //     price: '10.32',
-    //     recommended: false
-    // },
-    // {
-    //     id: 5,
-    //     src: '/public/img/products/71qBQnpQFYL.png',
-    //     name: 'AROMISTICO Coffee 1 kg',
-    //     country: 'Columbia',
-    //     price: '5.99',
-    //     recommended: false
-    // }
 ];
 

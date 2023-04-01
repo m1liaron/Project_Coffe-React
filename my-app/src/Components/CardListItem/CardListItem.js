@@ -2,9 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './CardListItem.css'
 
-export const CardListItem = ({ id, src, name, country, price }) => {
+function CardListItem({ id, src, name, country, price }){
+  console.log(name);
   return (
-    <Link style={{ textDecoration: 'none' }} to={`/coffee/${id}`}>
+    <Link to={`/coffee/${id}`} style={{ textDecoration: 'none' }}> 
         <div className="card-recomended">
                   <img className='img-card-recomended' src={src} alt={src} />
                   <div className="card-list-item__body">
