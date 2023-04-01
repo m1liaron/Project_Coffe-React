@@ -1,0 +1,37 @@
+.header{
+    background-image: url('../../resources/For-your-pleasure/Mask Group.png');
+    background-size: cover;
+    background-color: initial;
+    .container-text {
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-bottom: 84px; /* add this line to create space */
+      }
+      .container_navigator {
+        margin: 0;
+      }
+}
+
+.cards-coffee{
+  margin-right: 320px;
+  margin-left: 320px;
+  .list-cards{
+    flex-wrap: wrap;
+    max-width: 811px;
+    .card-list{
+        justify-content: normal;
+        gap: 60px;
+        .card-recomended{
+            width: 220px;
+        &:hover{
+            box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+            border-radius: 4px;
+        }
+        .img-card-recomended{
+            height: 115px;
+        }
+        }
+
+    }
+}
+}

@@ -18,6 +18,9 @@
   line-height: 17px;
   color: #FFFFFF;  
 }
+.item:hover{
+  text-decoration: underline;
+}
 .main-house{
   display: flex;
   align-items:center;

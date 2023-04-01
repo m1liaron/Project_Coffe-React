@@ -2,4 +2,6 @@
     display: flex;
     justify-content: center;
     gap: 70px;
+    flex-wrap: wrap;
+    min-width: 1001px;
 }
