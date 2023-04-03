@@ -8,7 +8,7 @@ import Nav from '../../Components/Nav/Nav';
 // import { Nav, CardList} from '../../Components';
 
 
-import {data} from "../../resources/data";
+import { data } from "../../resources/data";
 import  CardList  from "../../Components/CardList/CardList";
 import Footer from '../../Components/Footer/Fotter';
 

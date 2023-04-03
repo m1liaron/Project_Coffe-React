@@ -1,8 +1,8 @@
-import Solimo_Coffee_Beans from '../images/products/71qBQnpQFYL.png';
-import Presto_Coffee_Beans from '../images/products/91Ryk2gKejL.png';
-import AROMISTICO_Coffee from '../images/products/815O9ktyfUL.png';
+import Solimo_Coffee_Beans from './images/products/71qBQnpQFYL.png';
+import Presto_Coffee_Beans from './images/products/91Ryk2gKejL.png';
+import AROMISTICO_Coffee from './images/products/815O9ktyfUL.png';
 
-export const data = [
+export const data2 = [
     {
         id: 0,
         src: Solimo_Coffee_Beans,
@@ -31,7 +31,7 @@ export const data = [
         id: 3,
         src: Solimo_Coffee_Beans,
         name: 'Solimo Coffee Beans 2 kg',
-        country: 'Brazil',
+        country: 'Spain',
         price: '10.73',
         recommended: true
     },
@@ -39,7 +39,7 @@ export const data = [
         id: 4,
         src: Presto_Coffee_Beans,
         name: 'Presto Coffee Beans 1 kg',
-        country: 'Columbia',
+        country: 'Americe',
         price: '15.99',
         recommended: true
     },
@@ -47,7 +47,7 @@ export const data = [
         id: 5,
         src: AROMISTICO_Coffee,
         name: 'AROMISTICO Coffee 1 kg',
-        country: 'Kenya',
+        country: 'Columbia',
         price: '6.99',
         recommended: true
     }

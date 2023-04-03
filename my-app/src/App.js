@@ -8,9 +8,12 @@ import CoffeeDetail from './Pages/CoffeeDetail/CoffeeDetails';
 import NotFound from './Pages/NotFound/NotFound';
 import {BrowserRouter as Router, Routes, Route, BrowserRouter} from 'react-router-dom';
 
+
 function App() {
+
+
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/'>
       <div className="App">
         <Routes>
           <Route path="/" exact element={<Home/>}/>
@@ -19,10 +22,10 @@ function App() {
           <Route path="/coffee/:id" element={<CoffeeDetail/>}/>
           <Route path="/not-found" element={<NotFound/>} />
           <Route path="*" element={<NotFound/>} />
-          <Route path="/coffee/*" element={<NotFound/>} />
         </Routes>
       </div>  
     </BrowserRouter>
+    
   );
 }
 

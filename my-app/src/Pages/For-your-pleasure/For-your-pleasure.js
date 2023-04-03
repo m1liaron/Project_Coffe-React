@@ -3,7 +3,7 @@ import './For-your-pleasure.scss';
 
 
 import  CardList  from "../../Components/CardList/CardList";
-import {data} from "../../resources/data/dataFilter";
+import { data2 } from "../../resources/data2";
 import Nav from '../../Components/Nav/Nav';
 import Footer from '../../Components/Footer/Fotter';
 
@@ -46,7 +46,7 @@ function Pleasure() {
         </div>
         <div className="cards-coffee">
         <div className="list-cards">
-            <CardList data={data} /> 
+            <CardList data={data2} /> 
           </div>
         </div>
         <Footer/>

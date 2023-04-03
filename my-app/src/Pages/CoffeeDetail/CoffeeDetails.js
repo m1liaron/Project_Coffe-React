@@ -5,7 +5,7 @@ import './CoffeeDetails.scss'
 
 import Nav from '../../Components/Nav/Nav';
 
-import {data} from "../../resources/data";
+import { data2 } from "../../resources/data2";
 
 import AboutCoffeeBens from '../../resources/images/coffee-beans-about.svg';
 
@@ -14,12 +14,13 @@ import Coffee from '../../resources/images/products/CoffeeDetails/Mask Group.png
 import Footer from '../../Components/Footer/Fotter';
 
 function CoffeeDetails() {
+  
    const [item, setItem] = useState({});
    const { id } = useParams();
  
    useEffect(() => {
      const fetchItem = async () => {
-       const item = data.find((coffee) => coffee.id === Number(id));
+       const item = data2.find((coffee) => coffee.id === Number(id));
        setItem(item);
      };
  
