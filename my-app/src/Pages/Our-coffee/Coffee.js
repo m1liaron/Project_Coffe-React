@@ -16,31 +16,27 @@ import CardListFilter from '../../Components/CardListFilters/CardListFilters'
 
 import Solimo_Coffee_Beans from '../../resources/images/products/71qBQnpQFYL.png';
 
+import Search from '../../Components/Search/Search';
+
+
 class Coffee extends Component{
   constructor(props) {
     super(props);
     this.state = {
-        // data: [
-        //   {
-        //     id: 0,
-        //     src: Solimo_Coffee_Beans,
-        //     name: 'Solimo Coffee Beans 2 kg',
-        //     country: 'Brazil',
-        //     price: '10.73',
-        //     recommended: true
-        // },
-        // ],
         data:data2,
-        filter: ' '
+        filter: ' ',
+        term: ''
     }
+}
+
+onUpdataSearch = (term) => {
+  this.setState({term})
 }
 
 onFilterSelect = (filter) => {
   this.setState({filter});
   console.log(`This is ${filter}`);
 }
-
-
 
 filterPost = ( items,filter) => {
   switch (filter) {
@@ -58,8 +54,10 @@ filterPost = ( items,filter) => {
 }
  
   render(){
-    const { data,filter } = this.state;
-    const visibleData = this.filterPost(data, filter);
+    const { data,filter,term } = this.state;
+    const visibleData = this.filterPost(data, filter).filter(item =>
+      item.name.toLowerCase().includes(term.toLowerCase())
+    );
     return (
       <>
         <div className="main">
@@ -96,11 +94,15 @@ filterPost = ( items,filter) => {
         </div>
         <div className="filter__coffee">
           <div className="cards-container">
-            <CardListFilter filter={filter}
-                            onFilterSelect={this.onFilterSelect}
-            />
+            <div className="container-interaction">
+            <Search onUpdataSearch={this.onUpdataSearch}/>
+           <CardListFilter filter={filter}
+                            onFilterSelect={this.onFilterSelect}/>
+
+            </div>
+            
             <div className="list-cards">
-              <CardList data={visibleData} 
+              <CardList data={visibleData}  term={term}
               /> 
             </div>
           </div>

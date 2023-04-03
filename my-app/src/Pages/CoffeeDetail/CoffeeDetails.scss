@@ -1,41 +1,61 @@
 .about{
     padding: 30px 0;
-    .container-content{
-        .flex-about{
-            gap: 0px;
-            .image_coffe img{
-                width: 392px;
-                height: 355px;
+    .container{
+        margin-left: 100px;
+        margin-right: 100px;
+        padding: 0 10px;
+        .btn{
+            width: 100px;
+            padding-left: 240px;
+            .back-button{
+                font-family: 'Merienda';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 35px;
+                color: #000000;
+                border:none;
+                cursor: pointer;
             }
-            .about_coffee{
-                .price{
-                    font-weight: 400;
-                    font-size: 14px;
-                    line-height: 20px;
-                    text-align: center;
-                    margin-bottom: 10px;
-                    color: #000000;
+        }
+        .container-content{
+            width: 880px;
+            .flex-about{
+                gap: 30px;
+                .image_coffe img{
+                    width: 392px;
+                    height: 355px;
                 }
-                .paragrapg-about{
-                    text-align: left;
-                    .country_coffee,
-                    .description_coffee,
-                    .price_coffee{
-                        font-weight: 700;
+                .about_coffee{
+                    .price{
+                        font-weight: 400;
                         font-size: 14px;
                         line-height: 20px;
-
+                        text-align: center;
+                        margin-bottom: 10px;
                         color: #000000;
                     }
-                }
-                .price{
-                    font-weight: 400;
-                    font-size: 24px;
-                    line-height: 35px;
-                    color: #000000;
-                }
-                .description{
-                    margin-left: 5px;
+                    .paragrapg-about{
+                        text-align: left;
+                        .country_coffee,
+                        .description_coffee,
+                        .price_coffee{
+                            font-weight: 700;
+                            font-size: 14px;
+                            line-height: 20px;
+    
+                            color: #000000;
+                        }
+                    }
+                    .price{
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 35px;
+                        color: #000000;
+                    }
+                    .description{
+                        margin-left: 5px;
+                    }
                 }
             }
         }

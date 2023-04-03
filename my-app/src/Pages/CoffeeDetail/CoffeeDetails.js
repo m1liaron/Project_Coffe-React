@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'; 
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 
 import './CoffeeDetails.scss'
 
@@ -17,6 +17,7 @@ function CoffeeDetails() {
   
    const [item, setItem] = useState({});
    const { id } = useParams();
+   const navigate = useNavigate();
  
    useEffect(() => {
      const fetchItem = async () => {
@@ -26,6 +27,10 @@ function CoffeeDetails() {
  
      fetchItem();
    }, [id]);
+ 
+   const handleBackButtonClick = () => {
+     navigate(-1); // navigate back to the previous page
+   }
  
    return (
      <>
@@ -40,12 +45,16 @@ function CoffeeDetails() {
          </div>
        </div>
        <div className="about">
-         <div className="container-content">
+          <div className="container">
+          <div className="btn"><button className='back-button' onClick={handleBackButtonClick}>❮ Back</button></div>
+          <div className="container-content">
             <div className="flex-about">
                <div className="image_coffe">
                   <img src={Coffee} alt="" />
                </div>
                <div className="about_coffee">
+                  <div className='button-wrapper'>
+                  </div>
                   <h1 className='title-about-coffee'>About it</h1>
                   <img src={AboutCoffeeBens} alt="" />
                     <p className='paragrapg-about'><span className='country_coffee'>Country: </span>{item.country}</p>
@@ -56,6 +65,7 @@ function CoffeeDetails() {
               </div>
             </div>
          </div>
+          </div>
       </div>
       <Footer/>
      </>
@@ -63,4 +73,3 @@ function CoffeeDetails() {
  }
  
  export default CoffeeDetails;
- 

@@ -1,44 +1,66 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './CardListFilters.scss';
+import Search from '../Search/Search';
 
-const CardListFilters = (props) => {
-  const ButtonsData = [
-    { name: 'Brazil', label: 'Brazil' },
-    { name: 'Kenya', label: 'Kenya' },
-    { name: 'Columbia', label: 'Columbia' }
-  ]
+class CardListFilters extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      ButtonsData : [
+        { name: 'Brazil', label: 'Brazil' },
+        { name: 'Kenya', label: 'Kenya' },
+        { name: 'Columbia', label: 'Columbia' }
+      ],
+      term: '',
+      filter: ''
+    }
 
-  const Buttons = ButtonsData.map(({ name, label }) => {
-    const active = props.filter === name;
-    const clazz = active ? 'active' : '';
+
+    this.handleFilterSelect = this.handleFilterSelect.bind(this);
+    this.renderButtons = this.renderButtons.bind(this);
+  }
+
+  onUpdataSearch = (term) => {
+    this.setState({term})
+  }
+
+  handleFilterSelect(name) {
+    this.setState({ filter: name });
+    this.props.onFilterSelect(name);
+  }
+
+  renderButtons() {
+    return this.state.ButtonsData.map(({ name, label }) => {
+      const active = this.state.filter === name;
+      const clazz = active ? 'active' : '';
+  
+      return (
+        <button
+          type="button"
+          name={name}
+          className={`btn-filter ${clazz}`}
+          key={name}
+          onClick={() => this.handleFilterSelect(active ? '' : name)}
+        >
+          {label}
+        </button>
+      );
+    });
+  }
+  
+
+  render() {
     return (
-      <button
-        type="button"
-        name={name}
-        className={`btn-filter ${clazz}`}
-        key={name}
-        onClick={() =>
-          props.onFilterSelect(active ? '' : name)
-        }
-      >
-        {label}
-      </button>
-    );
-  });
+        <div className="container-interaction">
+                  <div className="container-btn-filter">
+          <label className='filter-label' htmlFor='filter-button'>Or filter</label>
+          {this.renderButtons()}
+        </div>
+        </div>
 
-  return (
-    <div className="container-interaction">
-      <div className="container-search">
-        <h1 className='search-title'>Lookiing for</h1>
-        <input className='input-search' type="text"
-          placeholder='start typing here...' />
-      </div>
-      <div className="container-btn-filter">
-      <label className='filter-label' htmlFor='filter-button'>Or filter</label>
-        {Buttons}
-      </div>
-    </div>
-  )
+
+    );
+  }
 }
 
 export default CardListFilters;
