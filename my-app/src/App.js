@@ -25,8 +25,8 @@ function App() {
         }/>
           <Route path="/coffee" exact element={<OurCoffee/>}/>
           <Route path="/coffee/:id" element={<CoffeeDetail/>}/>
-          <Route path="/not-found" element={<NotFound/>} />
-          <Route path="*" element={<NotFound/>} />
+          {/* <Route path="/not-found" element={<NotFound/>} /> */}
+          {/* <Route path="*" element={<NotFound/>} /> */}
         </Routes>
       </div>  
     </BrowserRouter>
