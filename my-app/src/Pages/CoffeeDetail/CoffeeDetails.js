@@ -46,7 +46,9 @@ function CoffeeDetails() {
        </div>
        <div className="about">
           <div className="container">
-          <div className="btn"><button className='back-button' onClick={handleBackButtonClick}>❮ Back</button></div>
+          <div className="btn">
+          <button className='back-button' onClick={handleBackButtonClick}>❮ Back</button>
+          </div>
           <div className="container-content">
             <div className="flex-about">
                <div className="image_coffe">
@@ -61,7 +63,7 @@ function CoffeeDetails() {
                     <p className='paragrapg-about description'><span className='description_coffee'>Description: </span>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sit, inventore exercitationem illo sint cupiditate harum repellendus laborum ipsum architecto enim iusto, quis ipsa commodi, tenetur in consequuntur. Maiores, nisi!
                     </p>
-                    <p className='paragrapg-about price'><span className='price_coffee'>Price: </span>{item.price}</p>
+                    <p className='paragrapg-about price'><span className='price_coffee'>Price: </span>{item.price}$</p>
               </div>
             </div>
          </div>

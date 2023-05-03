@@ -7,7 +7,7 @@ function CardListItem({ id, src, name, country, price }){
   return (
     <Link to={`/coffee/${id}`} style={{ textDecoration: 'none' }}> 
         <div className="card-recomended">
-                  <img className='img-card-recomended' src={src} alt={src} />
+                  <img className='img-card-recomended' src={src} alt={name} />
                   <div className="card-list-item__body">
                   <h5 className="coffee-card__title">{name}</h5>
                   <p className="coffee-card__country">{country}</p>

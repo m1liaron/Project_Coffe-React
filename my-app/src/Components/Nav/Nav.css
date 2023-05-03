@@ -19,7 +19,7 @@
   color: #FFFFFF;  
 }
 .item:hover{
-  text-decoration: underline;
+  text-decoration: underline 2px solid;
 }
 .main-house{
   display: flex;
