@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Project_Coffe-React/static/css/main.0aea4868.css",
+    "main.js": "/Project_Coffe-React/static/js/main.ae0fe204.js",
+    "static/media/Recomended bg.jpg": "/Project_Coffe-React/static/media/Recomended bg.e3f5093ea8367ad771ef.jpg",
+    "static/media/Mask Group.png": "/Project_Coffe-React/static/media/Mask Group.458380ee19d8228c47ae.png",
+    "static/media/Main_bg.png": "/Project_Coffe-React/static/media/Main_bg.77078c9e0edc247e033d.png",
+    "static/media/Main bg.jpg": "/Project_Coffe-React/static/media/Main bg.ad9c54d6db833396a159.jpg",
+    "static/media/sad-dog-256-2x.gif": "/Project_Coffe-React/static/media/sad-dog-256-2x.37dbe37e0f22e1c6e3f9.gif",
+    "static/media/WomanWithCupOfCoffee.png": "/Project_Coffe-React/static/media/WomanWithCupOfCoffee.957a3dfb1d9579487476.png",
+    "static/media/Coffee.png": "/Project_Coffe-React/static/media/Coffee.5e617ab40eb6bbdd3954.png",
+    "static/media/71qBQnpQFYL.png": "/Project_Coffe-React/static/media/71qBQnpQFYL.abb45c1ba257a5364ef1.png",
+    "static/media/815O9ktyfUL.png": "/Project_Coffe-React/static/media/815O9ktyfUL.25d5ad4a54bdd9afbde4.png",
+    "static/media/91Ryk2gKejL.png": "/Project_Coffe-React/static/media/91Ryk2gKejL.7d9f028b14b6f1708735.png",
+    "static/media/coffee-beans-header.svg": "/Project_Coffe-React/static/media/coffee-beans-header.7e5af2c62f1b4e24ac4325270d595efe.svg",
+    "static/media/coffee-beans-footer.svg": "/Project_Coffe-React/static/media/coffee-beans-footer.b203ac4aa243222ebe7fda99b2c78a55.svg",
+    "static/media/Coffee-beans-main.svg": "/Project_Coffe-React/static/media/Coffee-beans-main.a1450050bbf2e1caca986da9921ac44d.svg",
+    "static/media/coffee-beans-about.svg": "/Project_Coffe-React/static/media/coffee-beans-about.bb624589c614823591625b6d258b9aed.svg",
+    "index.html": "/Project_Coffe-React/index.html",
+    "main.0aea4868.css.map": "/Project_Coffe-React/static/css/main.0aea4868.css.map",
+    "main.ae0fe204.js.map": "/Project_Coffe-React/static/js/main.ae0fe204.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0aea4868.css",
+    "static/js/main.ae0fe204.js"
+  ]
+}
