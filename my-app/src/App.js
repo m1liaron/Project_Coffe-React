@@ -16,16 +16,16 @@ function App() {
 
 
   return (
-    <BrowserRouter basename='/'>
+    <BrowserRouter>
       <div className="App">
         <Routes>
-          <Route path="/" exact element={<Home/>}/>
-          <Route path="/about" element={
+          <Route path="/Project_Coffe-React" exact element={<Home/>}/>
+          <Route 
+             path="/about" element={
             <Suspense fallback={<Spinner />}><About/></Suspense>
         }/>
           <Route path="/coffee" exact element={<OurCoffee/>}/>
           <Route path="/coffee/:id" element={<CoffeeDetail/>}/>
-          {/* <Route path="/not-found" element={<NotFound/>} /> */}
           {/* <Route path="*" element={<NotFound/>} /> */}
         </Routes>
       </div>  

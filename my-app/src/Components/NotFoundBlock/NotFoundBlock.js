@@ -1,5 +1,5 @@
 import './NotFoundBlock.scss';
-// import Img from '../../resources/Not found/sad-dog-256-2x.gif'
+import Img from '../../resources/Not found/sad-dog-256-2x.gif'
 
 import { Link } from 'react-router-dom';
 

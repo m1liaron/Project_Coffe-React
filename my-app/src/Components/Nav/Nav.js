@@ -9,10 +9,10 @@ function Nav(){
         <nav className='container_navigator'>
             <ul className="nav-links">
                 <div className="main-house">
-                <Link style={{ textDecoration: 'none' }} to='/'>
+                <Link style={{ textDecoration: 'none' }} to='/Project_Coffe-React'>
                 <img src={BeansHeader} alt="" />
                 </Link>
-                <Link style={{ textDecoration: 'none' }} to='/'>
+                <Link style={{ textDecoration: 'none' }} to='/Project_Coffe-React'>
                 <li className='item'>Coffee House</li>
                 </Link>
                 </div>
