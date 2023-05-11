@@ -1,34 +1,28 @@
-import { Component} from 'react';
+import { useState} from 'react';
 
 import React from 'react';
 import './Search.scss';
 
-class Search extends Component {
-    constructor (props) {
-        super(props);
-        this.state = {
-            term : ''
-        }
-    }
+const Search = (props) => {
+    const [term, setTerm] = useState('')
   
-onUpdataSearch = (e) => {
-    const term = e.target.value;
-    this.setState({ term }); 
-    this.props.onUpdataSearch(term); 
+const onUpdataSearch = (e) => {
+    const updateterm = e.target.value;
+    setTerm(updateterm);
+    props.onUpdataSearch(term);
 }
 
-render(){
     return (
         <div className="container-search">
             <h1 className='search-title'>Lookiing for</h1>
-                            <input type="text" 
+                <input 
+                    type="text" 
                     className='input-search' 
                     placeholder='start typing here...'
-                    value={this.state.term}
-                    onChange={this.onUpdataSearch} />  
+                    value={term}
+                    onChange={onUpdataSearch} />  
         </div>
       )
-}
 }
 
 export default Search;

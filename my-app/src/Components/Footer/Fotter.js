@@ -13,10 +13,10 @@ const Footer = () => {
                 <div className="main-house-footer">
                   <div className="flex-footer">
                         <div className="logo_container">
-                            <Link style={{ textDecoration: 'none' }} to='/'>
+                            <Link style={{ textDecoration: 'none' }} to='/Project_Coffe-React'>
                             <img src={BeansHeader} alt="" />
                             </Link>
-                            <Link style={{ textDecoration: 'none' }} to='/'>
+                            <Link style={{ textDecoration: 'none' }} to='/Project_Coffe-React'>
                             <li className='item'>Coffee House</li>
                             </Link>
                         </div>
