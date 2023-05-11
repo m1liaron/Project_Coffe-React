@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Project_Coffe-React/static/css/main.0aea4868.css",
-    "main.js": "/Project_Coffe-React/static/js/main.ae0fe204.js",
+    "main.js": "/Project_Coffe-React/static/js/main.a89ea9c0.js",
     "static/media/Recomended bg.jpg": "/Project_Coffe-React/static/media/Recomended bg.e3f5093ea8367ad771ef.jpg",
     "static/media/Mask Group.png": "/Project_Coffe-React/static/media/Mask Group.458380ee19d8228c47ae.png",
     "static/media/Main_bg.png": "/Project_Coffe-React/static/media/Main_bg.77078c9e0edc247e033d.png",
@@ -18,10 +18,10 @@
     "static/media/coffee-beans-about.svg": "/Project_Coffe-React/static/media/coffee-beans-about.bb624589c614823591625b6d258b9aed.svg",
     "index.html": "/Project_Coffe-React/index.html",
     "main.0aea4868.css.map": "/Project_Coffe-React/static/css/main.0aea4868.css.map",
-    "main.ae0fe204.js.map": "/Project_Coffe-React/static/js/main.ae0fe204.js.map"
+    "main.a89ea9c0.js.map": "/Project_Coffe-React/static/js/main.a89ea9c0.js.map"
   },
   "entrypoints": [
     "static/css/main.0aea4868.css",
-    "static/js/main.ae0fe204.js"
+    "static/js/main.a89ea9c0.js"
   ]
 }
